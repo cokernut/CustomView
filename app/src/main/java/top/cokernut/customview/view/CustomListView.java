@@ -8,17 +8,17 @@ import android.widget.ListView;
  * 解决ListView在ScrollView中显示不全的问题
  */
 
-public class MyListView extends ListView {
+public class CustomListView extends ListView {
 
-	public MyListView(Context context, AttributeSet attrs) {
+	public CustomListView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 	}
 
-	public MyListView(Context context) {
+	public CustomListView(Context context) {
 		super(context);
 	}
 
-	public MyListView(Context context, AttributeSet attrs, int defStyle) {
+	public CustomListView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
 	}
 

@@ -67,7 +67,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/tv_nine_image_share"
                         android:layout_marginLeft="10dp"
-                        android:text="保存商品图，发送朋友圈"
+                        android:text="发送朋友圈"
                         android:textColor="@color/gray"
                         android:textSize="@dimen/text_size_12" />
 
@@ -115,7 +115,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/tv_nine_image_share"
                         android:layout_marginLeft="10dp"
-                        android:text="一键转发，快速分享"
+                        android:text="快速分享"
                         android:textColor="@color/gray"
                         android:textSize="@dimen/text_size_12" />
 
