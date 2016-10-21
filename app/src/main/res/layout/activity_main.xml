@@ -22,9 +22,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/spv_01"
             android:layout_marginTop="16dp"
-            app:layout_constraintHorizontal_bias="0.2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="16dp" />
+            app:layout_constraintHorizontal_bias="0.21" />
 
         <top.cokernut.customview.view.SimpleProgressView
             android:layout_width="100dp"
@@ -38,6 +36,16 @@
             android:layout_marginLeft="8dp"
             app:layout_constraintHorizontal_bias="0.66"
             android:layout_marginTop="16dp" />
+
+        <top.cokernut.customview.view.WifiView
+            android:id="@+id/wv"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toBottomOf="@+id/spv_01"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="16dp" />
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

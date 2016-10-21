@@ -104,19 +104,18 @@ public class SimpleProgressView extends View {
     }
 
     private ValueAnimator startViewAnim(float startF, float endF, int time) {
-        valueAnimator = ValueAnimator.ofFloat(startF, endF);
-        valueAnimator.setDuration(time);
-        valueAnimator.setInterpolator(new LinearInterpolator());
+        valueAnimator = ValueAnimator.ofFloat(startF, endF);    //Value值的伴随动画的过渡范围
+        valueAnimator.setDuration(time);                        //一遍动画的时间
+        valueAnimator.setInterpolator(new LinearInterpolator());//插值器，动画形式，LinearInterpolator代表均匀变化
         valueAnimator.setRepeatCount(ValueAnimator.INFINITE);   //循环次数
         valueAnimator.setRepeatMode(ValueAnimator.RESTART);     //循环模式
 
         valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator valueAnimator) {
-
                 float value = (float) valueAnimator.getAnimatedValue();
                 startAngle = 360 * value;
-
+                //刷新视图
                 invalidate();
             }
         });
@@ -157,9 +156,11 @@ public class SimpleProgressView extends View {
      * @param colors 可变长参数，每一个值代表一种颜色
      */
     public void setProgressColors(int... colors) {
-        mColors.clear();
-        for (int i = 0; i < colors.length; i++) {
-            mColors.add(colors[i]);
+        if (colors.length > 0) {
+            mColors.clear();
+            for (int i = 0; i < colors.length; i++) {
+                mColors.add(colors[i]);
+            }
         }
     }
 }
