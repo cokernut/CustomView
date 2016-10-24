@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="FlowLayout">
+        <attr name="bgColor" format="color" />
+    </declare-styleable>
+</resources>

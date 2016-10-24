@@ -1,7 +1,9 @@
 package top.cokernut.customview.activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 import top.cokernut.customview.R;
 import top.cokernut.customview.view.SimpleProgressView;
@@ -18,6 +20,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mSPV01 = (SimpleProgressView) findViewById(R.id.spv_01);
+        mSPV01.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, HorizontalViewPagerActivity.class));
+            }
+        });
         mSPV02 = (SimpleProgressView) findViewById(R.id.spv_02);
         mSPV01.startAnim();
         mSPV02.setProgressColors(0xFF008888, 0xFF888800, 0xFF880088);

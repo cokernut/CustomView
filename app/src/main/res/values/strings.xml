@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CustomView</string>
+    <string name="title_activity_horizontal_view_pager">HorizontalViewPagerActivity</string>
 </resources>
