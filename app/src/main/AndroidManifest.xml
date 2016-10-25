@@ -18,6 +18,10 @@
         <activity
             android:name=".activity.HorizontalViewPagerActivity"
             android:label="@string/title_activity_horizontal_view_pager"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.FlowLayoutActivity"
+            android:label="@string/title_activity_flow_layout"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

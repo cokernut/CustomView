@@ -33,10 +33,10 @@ public class VerticalViewPager extends ViewGroup {
     private void init(AttributeSet attrs, int defStyle) {
         // Load attributes
         final TypedArray a = getContext().obtainStyledAttributes(
-                attrs, R.styleable.FlowLayout, defStyle, 0);
+                attrs, R.styleable.VerticalViewPager, defStyle, 0);
 
         mColor = a.getColor(
-                R.styleable.FlowLayout_bgColor,
+                R.styleable.VerticalViewPager_bgColor,
                 mColor);
 
         a.recycle();

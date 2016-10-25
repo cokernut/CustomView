@@ -27,8 +27,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         mSPV02 = (SimpleProgressView) findViewById(R.id.spv_02);
+        mSPV02.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FlowLayoutActivity.class));
+            }
+        });
         mSPV01.startAnim();
-        mSPV02.setProgressColors(0xFF008888, 0xFF888800, 0xFF880088);
+        mSPV02.setProgressColors(0xFF06B6F8, 0xFFCDE815, 0xFFED0A70);
         mSPV02.startAnim();
         mWV = (WifiView) findViewById(R.id.wv);
         mWV.startAnim();

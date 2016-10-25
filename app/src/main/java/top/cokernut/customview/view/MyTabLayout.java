@@ -1,4 +1,4 @@
-package top.cokernut.customview.layout;
+package top.cokernut.customview.view;
 
 import android.content.Context;
 import android.support.design.widget.TabLayout;

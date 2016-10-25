@@ -1,5 +1,5 @@
 <resources>
     <declare-styleable name="VerticalViewPager">
-        <attr name="color" format="color" />
+        <attr name="bgColor" format="color" />
     </declare-styleable>
 </resources>
