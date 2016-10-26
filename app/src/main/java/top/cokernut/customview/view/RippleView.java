@@ -81,7 +81,7 @@ public class RippleView extends View {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         mWidth = getMeasuredWidth();
         mHeight = getMeasuredHeight();
-        mLength = mWidth/4;
+        mLength = mWidth/3;
     }
 
     @Override
@@ -96,11 +96,11 @@ public class RippleView extends View {
         mEndPoint.y = mHeight / 2;
         mControlOnePoint.x = mStartPoint.x + mLength;
         mControlOnePoint.y = 0;
-        mControlTwoPoint.x = mStartPoint.x + mLength * 3;
+        mControlTwoPoint.x = mStartPoint.x + mLength * 2;
         mControlTwoPoint.y = mHeight;
         mControlThreePoint.x = mCenterPoint.x + mLength;
         mControlThreePoint.y = 0;
-        mControlFourPoint.x = mCenterPoint.x + mLength * 3;
+        mControlFourPoint.x = mCenterPoint.x + mLength * 2;
         mControlFourPoint.y = mHeight;
         mPath.moveTo(mStartPoint.x, mStartPoint.y);
         mPath.cubicTo(mControlOnePoint.x, mControlOnePoint.y, mControlTwoPoint.x, mControlTwoPoint.y,
