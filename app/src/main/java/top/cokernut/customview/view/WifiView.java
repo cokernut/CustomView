@@ -28,7 +28,7 @@ public class WifiView extends View {
     private ValueAnimator valueAnimator;
     private int mAnimatedValue = 0;
     private RectF mRectF;
-    private int r = 60;
+    private int r = 0;
 
     public WifiView(Context context) {
         super(context);
@@ -53,7 +53,7 @@ public class WifiView extends View {
         mPaint.setAntiAlias(true);
         mPaint.setStyle(Paint.Style.FILL);
         mPaint.setColor(mWifiColor);
-        mPaint.setStrokeWidth(10);
+        mPaint.setStrokeWidth(8);
     }
 
     @Override
@@ -63,12 +63,13 @@ public class WifiView extends View {
             mWidth = getMeasuredHeight();
         else
             mWidth = getMeasuredWidth();
+        r = (int) (mWidth / 10);
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.save(); //锁画布(为了保存之前的画布状态)
+       // canvas.save(); //锁画布(为了保存之前的画布状态)
         mRectF = new RectF(mWidth/2-r, mWidth/2-r, mWidth/2+r, mWidth/2+r);
         mPaint.setStyle(Paint.Style.FILL);
         canvas.drawArc(mRectF, 225, 90, true, mPaint);
@@ -79,7 +80,7 @@ public class WifiView extends View {
                 canvas.drawArc(mRectF, 225, 90, false, mPaint);
             }
         }
-        canvas.restore();
+      //  canvas.restore();
     }
 
 
