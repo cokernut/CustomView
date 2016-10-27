@@ -76,6 +76,8 @@ public class RippleView extends View {
         mControlFourPoint = new PointF(0, 0);
     }
 
+    // 如果对View的宽高进行修改了，不要调用super.onMeasure(widthMeasureSpec,heightMeasureSpec);
+    // 要调用setMeasuredDimension(widthsize,heightsize); 这个函数。
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);

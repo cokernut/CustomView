@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import top.cokernut.customview.R;
+import top.cokernut.customview.view.CellView;
 import top.cokernut.customview.view.RippleView;
 import top.cokernut.customview.view.SimpleProgressView;
 import top.cokernut.customview.view.WifiView;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private SimpleProgressView mSPV02;
     private WifiView mWV;
     private RippleView mRV;
+    private CellView mCV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,5 +44,7 @@ public class MainActivity extends AppCompatActivity {
         mWV.startAnim();
         mRV = (RippleView) findViewById(R.id.rv);
         mRV.startAnim();
+        mCV = (CellView) findViewById(R.id.cv);
+        mCV.startAnim();
     }
 }

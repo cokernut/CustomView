@@ -175,9 +175,11 @@ public class HorizontalViewPager extends ViewGroup {
     }
 
     //这里需要测量这个ViewGroup的宽和高
+    // 如果对View的宽高进行修改了，不要调用super.onMeasure(widthMeasureSpec,heightMeasureSpec);
+    // 要调用setMeasuredDimension(widthsize,heightsize); 这个函数。
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+      //  super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         //得到宽和高的MODE和SIZE
         int widthMode = MeasureSpec.getMode(widthMeasureSpec);
         int widthSize = MeasureSpec.getSize(widthMeasureSpec);

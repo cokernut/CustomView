@@ -1,6 +1,0 @@
-<resources>
-    <declare-styleable name="RippleView">
-        <attr name="lineColor" format="color" />
-        <attr name="lineSize" format="dimension" />
-    </declare-styleable>
-</resources>

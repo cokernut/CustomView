@@ -1,5 +1,0 @@
-<resources>
-    <declare-styleable name="WaterDropView">
-        <attr name="WaterColor" format="color" />
-    </declare-styleable>
-</resources>

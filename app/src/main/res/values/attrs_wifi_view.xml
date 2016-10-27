@@ -1,5 +1,0 @@
-<resources>
-    <declare-styleable name="WifiView">
-        <attr name="wifiColor" format="color" />
-    </declare-styleable>
-</resources>

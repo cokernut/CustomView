@@ -83,7 +83,7 @@ public class SimpleProgressView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        mPaint.setColor(Color.argb(180, 255, 255, 255));
+        mPaint.setColor(Color.argb(50, 255, 255, 255));
         canvas.drawCircle(mWidth / 2, mWidth / 2, mWidth / 2 - mPadding, mPaint);
         rectF = new RectF(mPadding, mPadding, mWidth - mPadding, mWidth - mPadding);
         if (mColors.size() < 2) {
