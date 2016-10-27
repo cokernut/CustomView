@@ -56,7 +56,7 @@ public class WifiView extends View {
         mPaint.setStrokeWidth(8);
     }
 
-    // 如果对View的宽高进行修改了，不要调用super.onMeasure(widthMeasureSpec,heightMeasureSpec);
+    // 如果对View的宽高进行修改了之后，不要调用super.onMeasure(widthMeasureSpec,heightMeasureSpec);
     // 要调用setMeasuredDimension(widthsize,heightsize); 这个函数。
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
