@@ -71,18 +71,20 @@ public class CellView extends View {
         initPaint();
         if (mWidth/2 > mHeight/2) {
             mPaint.setColor(Color.GREEN);
-            mPaint.setStyle(Paint.Style.FILL);
+            mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
             canvas.drawRect(mWidth/4, mHeight/4, mWidth/4 + mValue*mWidth/2, mHeight/4*3, mPaint);
             mPaint.setColor(mLineColor);
+            mPaint.setStyle(Paint.Style.FILL);
             canvas.drawRect(mWidth/4*3, mHeight/2-4*mLineSize, mWidth/4*3+4*mLineSize, mHeight/2+4*mLineSize, mPaint);
             mPaint.setStyle(Paint.Style.STROKE);
             RectF rectF = new RectF(mWidth/4-mLineSize, mHeight/4-mLineSize, mWidth/4*3+mLineSize, mHeight/4*3+mLineSize);
             canvas.drawRoundRect(rectF, mLineSize*2, mLineSize*2, mPaint);
         } else {
             mPaint.setColor(Color.GREEN);
-            mPaint.setStyle(Paint.Style.FILL);
+            mPaint.setStyle(Paint.Style.FILL_AND_STROKE);
             canvas.drawRect(mWidth/4, mHeight/4*3-mValue*mHeight/2, mWidth/4*3, mHeight/4*3, mPaint);
             mPaint.setColor(mLineColor);
+            mPaint.setStyle(Paint.Style.FILL);
             canvas.drawRect(mWidth/2-4*mLineSize, mHeight/4-4*mLineSize, mWidth/2+4*mLineSize, mHeight/4, mPaint);
             mPaint.setStyle(Paint.Style.STROKE);
             RectF rectF = new RectF(mWidth/4-mLineSize, mHeight/4-mLineSize, mWidth/4*3+mLineSize, mHeight/4*3+mLineSize);
