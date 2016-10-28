@@ -56,6 +56,13 @@ public class WifiView extends View {
         mPaint.setStrokeWidth(8);
     }
 
+    /**
+     * getWidth()和getMeasuredWidth()的区别
+     * getWidth(): View在设定好布局后，整个View的宽度
+     * getMeasuredWidth()：对View上的内容进行测量后得到的View内容占据的宽度。
+     * 很简单，getWidth()就是View显示之后的width，而getMeasuredWidth，
+     * 从前面的源代码就可以看出来其实是在measure里面传入的参数，具体是否一样完全要看程序最后的计算。
+     */
     // 如果对View的宽高进行修改了之后，不要调用super.onMeasure(widthMeasureSpec,heightMeasureSpec);
     // 要调用setMeasuredDimension(widthsize,heightsize); 这个函数。
     @Override

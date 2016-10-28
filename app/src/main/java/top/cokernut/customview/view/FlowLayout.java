@@ -68,6 +68,8 @@ public class FlowLayout extends ViewGroup {
 
     /**
      * 负责设置子控件的测量模式和大小 根据所有子控件设置自己的宽和高
+     *  如果对View的宽高进行修改了之后，不要调用super.onMeasure(widthMeasureSpec,heightMeasureSpec);
+     *  要调用setMeasuredDimension(widthsize,heightsize); 这个函数。
      */
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {

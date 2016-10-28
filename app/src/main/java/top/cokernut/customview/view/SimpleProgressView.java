@@ -62,6 +62,11 @@ public class SimpleProgressView extends View {
     }
 
     /**
+     * getWidth()和getMeasuredWidth()的区别
+     * getWidth(): View在设定好布局后，整个View的宽度
+     * getMeasuredWidth()：对View上的内容进行测量后得到的View内容占据的宽度。
+     * 很简单，getWidth()就是View显示之后的width，而getMeasuredWidth，
+     * 从前面的源代码就可以看出来其实是在measure里面传入的参数，具体是否一样完全要看程序最后的计算。
      * getMeasuredHeight，getMeasuredWidth 测量的高度，宽度
      * getHeight，getWidth 显示的高度，宽度
      * 实际上在当屏幕可以包裹内容的时候，他们的值是相等的，只有当view超出屏幕后，
