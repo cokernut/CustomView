@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import top.cokernut.customview.R;
 
 /**
- * 自定义View练习
+ * 刷新View
  */
 public class SimpleProgressView extends View {
     private ArrayList<Integer> mColors; // 默认颜色
