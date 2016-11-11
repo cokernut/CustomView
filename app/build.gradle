@@ -10,7 +10,15 @@ android {
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
+    /*    jackOptions { //开启Jack编译器，API版本要大于24
+            enabled true
+        }*/
     }
+
+    dexOptions{
+        javaMaxHeapSize "2g"
+    }
+
     buildTypes {
         release {
             minifyEnabled false
