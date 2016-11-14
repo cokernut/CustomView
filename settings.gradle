@@ -1,1 +1,1 @@
-include ':simple', ':customview'
+include ':sample', ':customview'
